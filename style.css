@@ -50,6 +50,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: 30%;
 }
 .share{
   display: flex;
@@ -66,4 +67,8 @@ body {
 }
 #whatsapp{
   background-color: green;
+}
+#author{
+  display: flex;
+  justify-content:flex-end ;
 }

@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const textElement = document.getElementById("text");
     const authorElement = document.getElementById("author");
     const newQuoteButton = document.getElementById("new-quote");
-    const tweetQuoteButton = document.getElementById("tweet-quote");
+    const tweetQuoteButton = document.getElementById("tweet");
   
     // Function to generate random quote
     function getRandomQuote() {
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Function to update quote
 
-    
+
     function updateQuote() {
       const { text, author } = getRandomQuote();
       textElement.textContent = text
