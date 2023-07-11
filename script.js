@@ -35,10 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     // Function to update quote
+
+    
     function updateQuote() {
       const { text, author } = getRandomQuote();
-      textElement.textContent = text;
-      authorElement.textContent = author;
+      textElement.textContent = text
+      authorElement.textContent = " - " + author;
       tweetQuoteButton.setAttribute("href", `https://twitter.com/intent/tweet?text=${encodeURIComponent(`"${text}" - ${author}`)}`);
     }
   
