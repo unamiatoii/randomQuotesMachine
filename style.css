@@ -50,7 +50,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 30%;
+  width: 100%;
 }
 .share{
   display: flex;
@@ -71,4 +71,23 @@ body {
 #author{
   display: flex;
   justify-content:flex-end ;
+}
+
+@media (max-width: 991.98px) {
+  actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+  }
+
+
+  #quote-box{
+    width: 100%;
+  }
+
+  .share{
+    justify-content: space-between;
+    width: 50%;
+  }
 }

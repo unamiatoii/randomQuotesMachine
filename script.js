@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const authorElement = document.getElementById("author");
     const newQuoteButton = document.getElementById("new-quote");
     const tweetQuoteButton = document.getElementById("tweet");
+    const facebookQuoteButton = document.getElementById("facebook");
+    const whatsappQuoteButton = document.getElementById("whatsapp");  
   
     // Function to generate random quote
     function getRandomQuote() {
@@ -42,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
       textElement.textContent = text
       authorElement.textContent = " - " + author;
       tweetQuoteButton.setAttribute("href", `https://twitter.com/intent/tweet?text=${encodeURIComponent(`"${text}" - ${author}`)}`);
+      facebookQuoteButton.setAttribute("href", `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`"${text}" - ${author}`)}`);
+      whatsappQuoteButton.setAttribute("href",`https://api.whatsapp.com/send?text=${encodeURIComponent(`"${text}" - ${author}`)}`);
     }
   
     // Event listener for new quote button
